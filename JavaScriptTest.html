@@ -1,0 +1,97 @@
+
+<html>
+  <head>
+    <title>Java Script Testing</title>
+  </head>
+
+  <body>
+    <h2 align="center"> Java Script Testing </h2>
+
+    <script type="text/javascript">
+      document.write("<br> <h3> Problem 1 </h3> ");
+      function lessThan5P(e) { return e < 5; }
+      function greaterThan10P(e) { return e > 10; }
+      function equalTo7P(e) { return e == 7; }
+      function negativeP(e) { return e < 0; }
+
+      function or(a,b) { return a || b; }
+      function and(a,b) { return a && b; }
+      function not(a) { return !a; }
+
+      function predicate(a) { return and(or(or(lessThan5P(a), greaterThan10P(a)),
+            equalTo7P(a)), not(negativeP(a))); }
+
+      document.write(predicate(-1) + ' ');
+      document.write(predicate(4) + ' '); 
+      document.write(predicate(11) + ' ');
+      document.write(predicate(7) + ' ');
+      document.write(predicate(8) + " ");
+
+      /*
+      alert(predicate(-1)); // flase
+      alert(predicate(4)); // true
+      alert(predicate(11)); // true;
+      alert(predicate(7)); // true;
+      alert(predicate(6)); // false
+       */
+    </script>
+    <script type="text/javascript">
+      document.write("<br> <h3> Problem 2 </h3>");
+
+      function NumObbie(val) {
+        this.val = val;
+        this.set = function(a) { this.val = a; };
+        this.plus = function (a) { 
+          if (typeof(a) == "object") {
+            return new ComplexPlus(this, a);
+          } else {
+            return new ComplexPlus(this, NumObbie(a));
+          }
+        };
+        this.times = function (a) { 
+          if (typeof(a) == "object") {
+            return new ComplexTimes(this, a);
+          } else {
+            return new ComplexTimes(this, new NumObbie(a))
+          }
+        };
+        this.value = function () { return this.val; };
+      }
+
+      function ComplexPlus (left, right) {
+        this.left = left;
+        this.right = right;
+        this.value = function() { return (left.value()) + (right.value()); };
+      }
+
+      function ComplexTimes(left, right) {
+        this.left = left;
+        this.right = right;
+        this.value = function() { return left.value() * right.value(); };
+      }
+
+      function ReactingNumber(x) {
+        return new NumObbie(x);
+      }
+
+      var x = ReactingNumber(2);
+      var y = ReactingNumber(4);
+      var expression = x.plus(y.times(3));
+
+      document.write(expression.value() + ' ');
+      x.set(1);
+      document.write(expression.value() + ' ');
+      y.set(3);   
+      document.write(expression.value() + ' ');
+      /*
+      alert(expression.value); // 14
+      x.set(1);
+      alert(expression.value); // 13
+      y.set(3);
+      alert(expression.value); // 10
+      */
+    </script>
+
+  </body>
+
+</html>

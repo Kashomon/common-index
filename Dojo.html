@@ -1,0 +1,35 @@
+
+<html>
+  <head>
+    <title>Java Script Testing</title>
+  </head>
+
+  <body>
+    <h2> Javascript Testing </h2>
+
+    <script type="text/javascript">
+      var lessThan5P = function(e) { return e < 5; }
+      var greaterThan10P = function(e) { return e > 10; }
+      var equalTo7P = function(e) { return e == 7; }
+      var negativeP = function(e) { return e < 0; }
+
+      function or(a,b) { return a || b; }
+      function and(a,b) { return a && b; }
+      function not(a) { return !a; }
+
+      var predicate = and(or(or(lessThan5P, greaterThan10P), equalTo7P),
+          not(negativeP));
+
+      alert(predicate(-1)); // flase
+      alert(predicate(4)); // true
+      alert(predicate(11)); // true;
+      alert(predicate(7)); // true;
+      alert(predicate(6)); // false
+      
+    </script>
+
+  </body>
+
+</html>
+
+    <script src ="dojo.js" type="text/javascript"></script>

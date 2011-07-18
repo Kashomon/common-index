@@ -1,0 +1,144 @@
+/* created by Josh Hoak */
+
+html { 
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 { 
+  font: italic 2em georgia, sans-serif;
+  letter-spacing: 1px;
+}
+
+h2 { 
+  font: normal 1em georgia, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+h3 {
+  font: bold 1em georgia, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: .5em;
+}
+
+p.spaced {
+  line-height: 1.5em;
+}
+
+
+/* divs that have color */
+body { 
+  margin: 0px;
+  padding: 0px;
+  /* old color: #ebd2b7 */
+  background-color: #9fbfd3;
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #CC4500 
+}
+
+a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #CC4500 
+}
+
+a:hover {
+  text-decoration: none;
+  color: #880000;
+}
+/* end divs that have color */
+
+#content-container {
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  width: 600px;
+  margin-left: -300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#content {
+  position: relative;
+  /* margin-top: 20px; */
+  background: white url(files/images/LightBindex2.jpg) no-repeat top center;
+  border: solid gray 1px;
+}
+
+
+
+#header {
+  padding: 20px;
+  text-align: center;
+}
+
+#linklist {
+  padding: 10px;
+  word-spacing: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  font: 12px verdana, sans-serif; 
+  text-decoration: none;
+}
+
+#mainbox{
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font: 85% palatino;
+  letter-spacing: .5px;
+}
+
+
+#mainbox ul.a {
+  list-style-type: none;
+}
+
+img.floatLeft {
+  float: left;
+  margin-right: 10px;
+}
+
+#mainbox li { 
+  text-align: left;
+  padding-bottom: .5em;
+  margin-right: 10px;
+  line-height: 1.5em; 
+}
+
+#mainbox li.a {
+  text-align: left;
+  padding-bottom: 1em;
+  margin-right: 10px;
+  line-height: 1.5em; 
+}
+
+/*
+#mainbox li.kgsprog {
+  background: transparent url(files/EdgeDetection.jpg) no-repeat left;
+}
+*/
+
+#footer{
+  margin-top: 50px;
+  position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  font: normal 50% verdana; 
+}
+
+#licenseText{
+  text-align: center;
+}
+

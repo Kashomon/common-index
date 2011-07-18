@@ -1,0 +1,38 @@
+
+<html>
+
+  <head>
+    <script type="text/javascript" src="jquery-1.4.3-min.js"></script>
+    <script type="text/javascript" src="raphael-min.js"></script>
+    <script type="text/javascript" src="go-display.js"></script>
+
+    <style> 
+      .rightcolumn { 
+        width: 300px; 
+        border: 1px solid gray; 
+        float: right;
+        padding: 10; 
+        font-family: Courier;
+        font-size: 75%;
+      }   
+    </style> 
+  </head>
+
+
+  <body>
+
+    <div id="cat"></div>
+    <p> Go Display </p>
+
+    <div class="rightcolumn">
+      <center> <h3> ::: Display Log ::: </h3> </center>
+    </div>
+
+
+    <script type="text/javascript">
+      var paper = Raphael(10, 50, 640, 640);
+      //testCircle(paper)
+      var goboard = new GoInstance(paper, 30, 19, ".rightcolumn");
+    </script>
+  </body>
+</html>

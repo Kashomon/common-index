@@ -1,0 +1,223 @@
+<html>
+  <head>
+
+  <title>A repository for Josh Hoak</title>
+  
+  <style type="text/css" media="all">
+    @import "homestyle.css"; 
+  </style>
+</head>
+
+<body>
+<div id="content-container">
+  <div id="content">
+    <div id="header">
+      <h1> a common index </h1>
+      <h2> or rather, the website of Josh Hoak </h2>
+    </div>
+
+    <div id="linklist">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="blogs.html">Blogs</a> 
+      <a href="files/Resume-P.pdf">R&eacute;sum&eacute;</a>
+    </div>
+
+    <div id = "mainbox">
+
+      <h3> Professional Projects </h3>
+      <ul class = "a">
+
+        <li class = "a"> 
+         <a href="files/MLBeamerPresent.pdf"><img
+           src="files/images/MLPresImageSmaller.jpg" class="floatLeft"></a>
+        <strong>Machine Learning Presentation: 13 Jan 2010</strong> 
+        <p> For the 
+        <a href="http://www.meetup.com/frontier-developers/">Frontier Developers' Meetup</a>,
+        I gave an introductory presentation on Machine Learning.  These
+        slides cover the basics of Perceptrons and give (very short)
+        introductions to Neural Networks, SVMs, and Unsupervised Learning.
+        They conclude with several slides devoted to a discussion of
+        application.  For the slides, check out: 
+        <a href="files/MLBeamerPresent.pdf">here.</a> 
+        </p> 
+
+        <li class = "a"> <img src="files/images/EdgeDetection.jpg" class="floatLeft">
+        <strong>Machine Vision: Go Board Recognition </strong> 
+        <p>
+        Currently (Summer 2010), I am using machine vision techniques to
+        identify Go boards from raw camera images for use in the 
+        <a href="http://www.gokgs.com">KGS</a>
+        Android application to help record Go games.  This project is still
+        underway, but I am having some good success so far.  Eventually, I plan
+        on having an entire page for this project, because there were many
+        interesting problems that had to be tackled along the way.  Also, the
+        code will eventually be posted here when it gets more finalized.
+        </p>
+        <p>
+        I used Java exclusively and programmed all the machine vision methods
+        from scratch.  If you are interested in the basics of machine vision
+        and image processing,
+        <a href="http://homepages.inf.ed.ac.uk/rbf/HIPR2/hipr_top.htm"> HIPR2 </a> 
+        is a fantastic resource.
+        </li>
+        </p>
+      </ul>
+
+
+      <h3> Academic Projects </h3>
+      <ul class = "a">
+        <li class = "a"> 
+        <a href="files/AML_Project.pdf"><img src="files/images/AMLsmall2.jpg" class="floatLeft"></a>
+        <strong> Machine Learning: Support Vector Machine Research</strong>
+        <p>
+        In the Spring of 2010, I researched the effects that noise has on
+        Support Vector Machines.  The idea for this project came from
+        researching Fuzzy Support Vector Machines, about which you can find
+        more in my
+        <a href="files/FSVMPresentation.pdf">introductory presentation</a>
+        on the subject.  FSVMs do not seem to have great improvements over
+        normal SVMs -- but why?  My hypothesis was that SVMs are naturally
+        fairly resistent to outliers, and so it is rather difficult to achieve
+        better results with FSVMs.  I tested this hypothesis by looking
+        specifically at the resiliance of SVMs (trained with a variety of
+        different kernels) to noise -- data points with flipped class labels.
+        My results supported this hypothesis, which you can check out in my 
+        <a href="files/AML_Project.pdf">original paper</a>
+        or in the
+        <a href="files/ResultsPresentation.pdf">results-presentation</a>
+        I gave for the Machine Learning seminar led by  
+        <a href="http://www.cs.pdx.edu/~mm/">Melanie Mitchell</a> 
+        at Portland State University.
+        </p>
+        <p>
+        For those interested in the technologies, I used 
+        <a href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/">LIBSVM</a>
+        to train and test Support Vector Machines, I used R to create the
+        artificial data, I used Python for general scipting, and I used
+        Matplotlib to make the graphs.  Eventually I plan on posting the python
+        code online, but it needs some revision before it is public-worthy
+        </li>
+        </p>
+
+        <li class = "a">
+        <a href="files/CryptoPresentation.pdf"><img
+          src="files/images/CryptoShot2.jpg" ALT="Cryptography Presentation" class="floatLeft"></a>
+        <strong> Modern Cryptography </strong> <br>
+        <p>
+        In the Winter/Spring of 2010, I participated in the Cryptography
+        Reading Group at Portland State University and led by 
+        <a href="http://web.cecs.pdx.edu/~teshrim/">Tom Shrimpton</a>
+        in which I gave presentations on
+        <a href="files/CryptoPresentation.pdf">Lossy Trapdoor Functions</a>,
+        developed by 
+        <a href="http://www.cc.gatech.edu/~cpeikert/">Chris Peikert</a>,
+        and on "Practical Chosen Ciphertext Secure Encryption from Factoring,"
+        a paper by 
+        <a href="http://www.iks.kit.edu/index.php?id=hofheinz">Dennis Hofheinz</a>
+        and 
+        <a href="http://homepages.cwi.nl/~kiltz/research.html">Eike Kiltz</a>.
+        </p>
+        <p> 
+        Cryptography lies in a fascinating place between pure mathematics and
+        computer science, and moreover has profound practical applications. I
+        was introduced to cryptography in Tom Shrimpton's introductory course
+        in the Fall/Winter of 2009.  For those just getting into cryptography,
+        the best resource out there for modern cryptography is the set of 
+        <a href="http://cseweb.ucsd.edu/users/mihir/cse207/classnotes.html">class notes</a>
+        written by the giants of cryptography Mihir Bellare and Phillip
+        Rogaway.
+        </p>
+        
+        <li class = "a"> 
+        <a href="files/thesis.pdf"><img src="files/images/ThesisThumb.jpg"
+          class="floatLeft" alt="Thesis"></a>
+        <strong> Complexity Theory and Mathematical Games: Undergraduate Thesis
+        </strong>
+        <p> I completed an undergraduate thesis at Reed College in complexity
+        theory, called 
+        <em><a href="files/thesis.pdf">Mathematical Games</a></em>, 
+        based upon the work of
+        <a href="http://www.dartmouth.edu/~rah/">Bob Hearn</a> 
+        in the Spring of 2009 with my advisor
+        <a href="http://people.reed.edu/~jamie/">Jamie Pommersheim</a>.  
+        I begin my thesis by looking at the theory behind the hardness classes
+        <strong>P</strong>, <strong>NP</strong>, <strong>PSPACE</strong>, and
+        <strong>EXPTIME</strong>, and show how they are used in Bob Hearn's
+        Constraint Logic, a general model for games.  I then apply Constraint
+        Logic to several games, one of which 
+        (<a href="http://fizzlebot.com/gridgame.php">Grid</a>)
+        was (to my knowledge) unexplored in the literature before this thesis.
+        </li>
+      </ul>
+
+      <h3> Recreational Projects </h3>
+      <ul class = "a">
+        <li class="a"> 
+        <img src="files/images/JsExperimentSmall.jpg" alt="Experiment 2"
+        class="floatLeft">
+        <strong> Javascript Explorations </strong>
+        <p>
+        I have been fascinated by the idea of creating a Go Program that can
+        assist me in studying Go Problems, and perhaps studying in general.
+        Those, of course, are a long way off, but the intermediate steps have
+        been fun. Here is one project: 
+        <a href="DisplayExperiment.html">DisplayExperiment</a>.
+        </p>
+        <br> 
+
+        <p> Here is another (more go related): 
+        <a href="GoDisplay.html">GoDisplay</a>.
+        </p>
+
+        <p>
+        The inspiration for these projects comes from my recent discovery of
+        the awesome libraries
+        <a href="http://jquery.com/">JQuery</a> 
+        and 
+        <a href="http://raphaeljs.com/">Raphael</a>,
+        for manipulating the DOM and creating SVG respectively.  These are
+        standard libraries for a reason, and if you haven't, you ought to check
+        them out.  Also, for those interested in Javascript's advanced
+        features, I highly recommend Spencer Tipping's 
+        <a href="https://github.com/spencertipping/js-in-ten-minutes">Js in Ten Minutes</a>
+        .
+        </li>
+        
+        <li class="a">
+        <a href="files/IntermediateTesuji.pdf"><img
+          src="files/images/TesujiBig.jpg" alt="Tesuji" class="floatLeft"></a>
+        <a href="files/IntermedTsumego.pdf"><img
+          src="files/images/TsumegoBig.jpg" alt="Tsumego" class="floatLeft"></a>
+        <strong> Go Diagram and Layout Generation </strong>
+        <p> In the summer of 2009, I typeset two books of Go problems from
+        various sources (mostly books in Japanese). The first is a book of 
+        <a href="files/IntermediateTesuji.pdf">Tesuji</a>, 
+        and the second is a book of
+        <a href="files/IntermedTsumego.pdf">Life and Death</a>.
+        I used a slightly modified version of Dan Bump's 
+        <a href="http://search.cpan.org/~reid/Games-Go-Sgf2Dg-4.211/sgf2dg">sgf2dg</a>
+        to create Encapsulated Postscript output from SGF files.  Then, I used
+        Python (and eps2pdf) to transform EPS files into PDF and to generate
+        reasonable-looking LaTeX code. 
+        </li>
+      </ul>
+
+
+    </div>
+
+    <div id="footer">  
+
+      <p> "Paul Erd&ouml;s liked to talk about The Book, in which God maintains the perfect proofs for mathematical theorems, following the dictum of G. H. Hardy that there is no permanent place for ugly mathematics.  Erd&ouml;s also said that you need not believe in God, but as a mathematician, you should believe in The Book."    --Preface to <a href="http://books.google.com/books?id=KvQr9l0wgf8C&lpg=PP1&dq=proofs%20from%20the%20book&pg=PP1#v=onepage&q=&f=false"><em> Proofs from the Book </em></a>
+
+      <div id = "licenseText"> 
+        <p> &copy;  Joshua Hoak, 2010
+      </div>   
+
+    </div>
+  </div>
+</div> <!-- Content Container -->
+</body>
+</html>
+

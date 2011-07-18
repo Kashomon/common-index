@@ -1,1 +1,1 @@
-Data for Josh Hoak's website
+Data for Josh Hoak's website.
