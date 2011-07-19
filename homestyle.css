@@ -39,19 +39,52 @@ body {
   background-color: #9fbfd3;
 }
 
+.jtoplink, .toplinkwrapper {
+  float: left;
+  width: auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  color: #CC4500;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+jlink {
+  color: #CC4500;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#newlinklist{
+  position: relative;
+  display: table;
+  width: auto;
+  padding: 10px;
+  word-spacing: 10px;
+  letter-spacing: 1px;
+  font: 12px verdana, sans-serif; 
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 a:link {
   text-decoration: none;
   font-weight: bold;
   color: #CC4500 
 }
 
-a:visited {
+a:visited, .jbuttonvisited {
   font-weight: bold;
   text-decoration: none;
   color: #CC4500 
 }
 
-a:hover {
+a:hover, .jbuttonhover {
   text-decoration: none;
   color: #880000;
 }
@@ -73,8 +106,6 @@ a:hover {
   background: white url(files/images/LightBindex2.jpg) no-repeat top center;
   border: solid gray 1px;
 }
-
-
 
 #header {
   padding: 20px;
@@ -100,7 +131,7 @@ a:hover {
 }
 
 
-#mainbox ul.a {
+#mainbox ul.proj {
   list-style-type: none;
 }
 
@@ -116,7 +147,7 @@ img.floatLeft {
   line-height: 1.5em; 
 }
 
-#mainbox li.a {
+#mainbox li.proj {
   text-align: left;
   padding-bottom: 1em;
   margin-right: 10px;

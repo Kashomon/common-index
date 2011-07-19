@@ -1,14 +1,14 @@
 <html>
-  <head>
 
+<head>
+  <script type="text/javascript" src="jsfiles/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="jsfiles/webbie.js"></script>
+  <link rel="stylesheet" type="text/css" href="homestyle.css">
   <title>A repository for Josh Hoak</title>
-  
-  <style type="text/css" media="all">
-    @import "homestyle.css"; 
-  </style>
+
 </head>
 
-<body>
+<body onload="webload()">
 <div id="content-container">
   <div id="content">
     <div id="header">
@@ -16,50 +16,29 @@
       <h2> or rather, the website of Josh Hoak </h2>
     </div>
 
-    <div id="linklist">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="blogs.html">Blogs</a> 
-      <a href="files/Resume-P.pdf">R&eacute;sum&eacute;</a>
+    <div id="newlinklist">
+      <div class="jtoplink" location="indexcontent.html">Home</div>
+      <div class="jtoplink" location="about.html">About</div>
+      <div class="jtoplink" location="projects.html">Projects</div>
+      <div class="jtoplink" location="blogs.html">Blogs</div>
+      <div class="toplinkwrapper"> <a href="files/Resume-P.pdf">Resume</a> </div>
     </div>
 
     <div id = "mainbox">
 
-      <p class = "spaced">
-      You have reached my page, which probably means that you are <br>
-      interested in either me or something that I do. As such...
-      </p>
-      <ul>
-        <li> 
-        The first place to go to learn about me is the 
-        <a href="about.html">About</a>
-        page, but if you want to know more, you can check out my Computer
-        Science and Math problems
-        <a href="http://momentdev.wordpress.com">blog</a>
-        or the
-        <a href="projects.html">Projects</a> page.
-
-        <li> 
-        If you're looking for the Go books that I have typeset, they can be
-        found in 
-        <a href="projects.html">Projects</a>
-        under the section titled "Go and Other Projects."
-      </ul>
     </div>
-
-    <div id="footer">  
+    <div id="footer">
 
       <p> "Paul Erd&ouml;s liked to talk about The Book, in which God maintains the perfect proofs for mathematical theorems, following the dictum of G. H. Hardy that there is no permanent place for ugly mathematics.  Erd&ouml;s also said that you need not believe in God, but as a mathematician, you should believe in The Book."    --Preface to <a href="http://books.google.com/books?id=KvQr9l0wgf8C&lpg=PP1&dq=proofs%20from%20the%20book&pg=PP1#v=onepage&q=&f=false"><em> Proofs from the Book </em></a>
 
-      <div id = "licenseText"> 
+      <div id = "licenseText">
         <p> &copy;  Joshua Hoak, 2010
       </div>  <!-- license text -->
 
     </div> <!-- footer -->
-  </div> <!-- content -->
-</div> <!-- Content-container -->
 
+  </div>
+</div>
 </body>
-</html>
 
+</html>
