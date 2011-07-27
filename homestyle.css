@@ -1,11 +1,5 @@
 /* created by Josh Hoak */
 
-html { 
-  margin: 0px;
-  padding: 0px;
-  overflow-y: scroll;
-}
-
 h1 { 
   font: italic 2em georgia, sans-serif;
   letter-spacing: 1px;
@@ -33,13 +27,6 @@ p.spaced {
 
 
 /* divs that have color */
-body { 
-  margin: 0px;
-  padding: 0px;
-  /* old color: #ebd2b7 */
-  background-color: #9fbfd3;
-}
-
 .jtoplink, .toplinkwrapper {
   float: left;
   width: auto;
@@ -76,13 +63,13 @@ jlink {
 a:link {
   text-decoration: none;
   font-weight: bold;
-  color: #CC4500 
+  color: #CC4500;
 }
 
 a:visited, .jbuttonvisited {
   font-weight: bold;
   text-decoration: none;
-  color: #CC4500 
+  color: #CC4500; 
 }
 
 a:hover, .jbuttonhover {
@@ -91,34 +78,12 @@ a:hover, .jbuttonhover {
 }
 /* end divs that have color */
 
-#content-container {
-  background: transparent;
-  position: absolute;
-  left: 50%;
-  width: 600px;
-  margin-left: -300px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-#content {
-  position: relative;
-  /* margin-top: 20px; */
-  background: white url(files/images/LightBindex2.jpg) no-repeat top center;
-  border: solid gray 1px;
-}
-
-#header {
-  padding: 20px;
-  text-align: center;
-}
-
 #linklist {
   padding: 10px;
   word-spacing: 10px;
   text-align: center;
   letter-spacing: 1px;
-  font: 12px verdana, sans-serif; 
+  font: 12px verdana, sans-serif;
   text-decoration: none;
 }
 
@@ -153,24 +118,5 @@ img.floatLeft {
   padding-bottom: 1em;
   margin-right: 10px;
   line-height: 1.5em; 
-}
-
-/*
-#mainbox li.kgsprog {
-  background: transparent url(files/EdgeDetection.jpg) no-repeat left;
-}
-*/
-
-#footer{
-  margin-top: 50px;
-  position: relative;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 30px;
-  font: normal 50% verdana; 
-}
-
-#licenseText{
-  text-align: center;
 }
 

@@ -1,0 +1,56 @@
+/* created by Josh Hoak */
+
+html { 
+  margin: 0px;
+  padding: 0px;
+  overflow-y: scroll;
+}
+
+body { 
+  margin: 0px;
+  padding: 0px;
+  /* old color: #ebd2b7 */
+  background-color: #9fbfd3;
+}
+
+#content-container {
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  width: 600px;
+  margin-left: -300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+#content {
+  position: relative;
+  /* margin-top: 20px; */
+  background: white url(files/images/LightBindex2.jpg) no-repeat top center;
+  border: solid #808090 4px;
+  -moz-border-radius: 50px; 
+  -webkit-border-radius: 50px;
+  border-radius: 50px; /* future proofing */
+  -khtml-border-radius: 50px; /* for old Konqueror browsers */
+}
+
+#header {
+  padding: 20px;
+  text-align: center;
+}
+
+#footer{
+  margin-top: 50px;
+  position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  font: normal 50% verdana;
+}
+
+#licenseText{
+  text-align: center;
+}
+
+
