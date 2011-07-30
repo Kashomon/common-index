@@ -9,7 +9,7 @@ var webload = (function() {
     });
   };
 
-  var loadContent = function(location) {
+  var loadContent = function(location, classname) {
     $("#mainbox").empty();
     if (webcontent[location] === undefined) {
       $.get(location, function(data) {
@@ -23,14 +23,16 @@ var webload = (function() {
 
   var replaceContent = function(content) {
     $("#mainbox").empty();
+    $("#mainbox").attr({type: "hidden"})
     $("#mainbox").append(content);
     createButtons("mainbox", "jlink");
+    $("#mainbox").attr({type: "visible"})
   }
 
   var createButtons = function(id, classname) {
     $("#"+id).find(classname).each(function(i) { 
       var that = this;
-      $(this).click(function(){ loadContent(that.getAttribute("location")); });
+      $(this).click(function(){ loadContent(that.getAttribute("location"), classname); });
       $(this).hover(
         function(){ $(that).css("color", "#880000"); },
         function(){ $(that).css("color", "#CC4500"); }

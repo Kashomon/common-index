@@ -97,7 +97,7 @@ a:hover, .jbuttonhover {
 }
 
 
-#mainbox ul.proj {
+#mainbox ul.expand {
   list-style-type: none;
 }
 
@@ -113,7 +113,7 @@ img.floatLeft {
   line-height: 1.5em; 
 }
 
-#mainbox li.proj {
+#mainbox li.expand {
   text-align: left;
   padding-bottom: 1em;
   margin-right: 10px;
