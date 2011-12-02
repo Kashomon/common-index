@@ -1,0 +1,15 @@
+#!/bin/bash
+
+myarg="$1"
+if [ $myarg = "all" ] 
+then 
+  s3cmd put *.css s3://www.common-index.com --acl-public
+  s3cmd put --recursive jsfiles s3://www.common-index.com --acl-public
+  s3cmd put *.html s3://www.common-index.com --acl-public
+fi
+
+s3cmd put $myarg s3://www.common-index.com/$myarg --acl-public
+
+#s3cmd put *.css s3://www.common-index.com --acl-public
+#s3cmd put --recursive jsfiles s3://www.common-index.com --acl-public
+#s3cmd put *.html s3://www.common-index.com --acl-public

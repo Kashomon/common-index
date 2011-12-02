@@ -1,0 +1,57 @@
+<html>
+
+  <head>
+    <title> Otre </title> 
+    <script type="text/javascript" src="libs/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="libs/raphael-min.js"></script>
+    <script type="text/javascript" src="otre.js"></script>
+    <script type="text/javascript" src="sgf_grammar.js"></script>
+    <script type="text/javascript" src="util.js"></script>
+    <script type="text/javascript" src="display.js"></script>
+    <script type="text/javascript" src="newrules.js"></script>
+    <script type="text/javascript" src="gostone.js"></script>
+    <style> 
+      #otre_display { 
+        position: relative;
+        top: 0;
+        width: 480px;
+        height: 480px; 
+        float: left;
+      }
+
+      #otreLogger { 
+        position: relative;
+        padding: 10; 
+        width: 300px; 
+        top: 20px;
+        border: 1px solid gray; 
+        float: right;
+        font-family: Courier;
+        font-size: 75%;
+      }   
+    </style> 
+  </head>
+
+
+  <body>
+
+    <div id="wrap" style="position:relative;">
+      <div id="otreLogger">
+        <center> <h3> ::: Display Log ::: </h3> </center>
+      </div>
+      <div id="otre_display">
+        <script type="text/javascript">
+          //parsing test
+          /*
+          $.get("sgfs/sgftest.sgf", function(data) {
+            var k = otre.parser.parse($.trim(data));
+            alert(JSON.stringify(k));
+            });
+          */
+          var paper = Raphael("otre_display", "100%", "100%");
+          otre.display.init(paper, "#otre_display", 19, "#otre_logger");
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

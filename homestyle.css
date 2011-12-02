@@ -40,10 +40,11 @@ p.spaced {
 }
 
 
-jlink {
+.jlink {
   color: #CC4500;
   font-weight: bold;
   cursor: pointer;
+  display: inline;
 }
 
 #newlinklist{
