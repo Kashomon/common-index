@@ -1,0 +1,45 @@
+---
+title: More Pyrite
+date: 11 December 2011
+---
+<p> 
+Pyrite is progressing well.  I just added
+<a href="http://www.makotemplates.org/">Mako templating</a> 
+into the mix, and fixed several old bugs.  I think I have also finally figured
+out the weird problems with Python imports
+</p>
+
+<p> 
+Working on this project has been interesting.  There are dozens of static blog
+generators out there already, so I sometimes feel silly reinventing the wheel.
+And then again, there are vast improvements to be made in this area.  For
+example, most (including this one at the moment) are not designed for
+consumption by the general public.  Most just produce HTML instead of harnessing
+the power of Javascript.
+</p>
+
+<p> 
+I am quite satisfied to have a working product.  Now it's time to refine the beast.
+</p>
+---
+title: Pyrite Enters Dogfood
+date: 3 December 2011
+---
+<p> 
+So begins a blog for my website;
+<a href="https://github.com/Kashomon/pyrite">Pyrite</a> 
+is entering alpha, and with this blog, I am beginning to dogfood my creation.
+Pyrite is a blog-generator in the style of 
+<a href="http://www.blogofile.com/">Blogofile</a>, 
+but with a significantly different philosophy.  I believe that existing
+websites should have a way to integrate a blog using Javascript in a seamless
+way, and hence, I created Pyrite. </p>
+
+<p>
+I realize that this blog has very few features of a traditional blog.  There
+are no internal-links available yet (like a date-archive), there are no feed
+options, and there isn't yet the ability to create comments.  However, these
+are all features I'm  working on.  I feel proud to have created this, and I'm
+excited to see where this project will go.
+</p>
+---

@@ -1,0 +1,24 @@
+---
+Title: Vim Projects!
+Date: 10 January 2012
+---
+<p> Hello!  I've had a busy month since my last post.
+
+<p> First, I finished two Vim projects.  The first is a 
+<a href="http://www.github.com/Kashomon/vimporter">
+Java-Importer plugin </a> that automaticall creates a Java Import and puts it
+in sorted order.  This was quite an extensive project and took learning a bunch
+of Vim hackery, but the finished project is quite wonderful.  You can specify
+any of Jars, Projects-paths, or Javadoc directories. Moreover, the plugin
+gives you a slick interface for choosing your favorite import to load.  I also
+wrote a version of this to work with the build environment at work.
+
+<p> Second, I finished <a href="http://www.github.com/Kashomon/vild"> Vild,
+</a> which is a general Vim-build tool, allowing project-specific definitions
+and commands.  If you're using Vim for multiple projects in multiple languages,
+I highly recommend this tool; it has certainly made my Vim experience far
+more enjoyable.
+
+<p> I plan on working again on Pyrite again soon, but I'm also working on Otre
+again as well. 
+---
